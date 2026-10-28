@@ -1,5 +1,6 @@
+from flask import render_template
 from app.admin import admin
 
 @admin.route('/panel')
 def panel():
-    return "Bienvenido al panel de administracion"
+    return render_template('panel.html')
